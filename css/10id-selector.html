@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+    <!-- id속성 작성 규칙 -->
+    <!-- 숫자로 시작하면 안됨 -->
+    <!-- 빈칸넣을 수 없음 -->
+    <!-- 특수문자는  - 혹은 _만 사용 -->
+    <!-- 대소문자 구분함 -->
+    <!-- 한페이지에 같은 id를 여러번 사용할 수 없음 -->
+
+    <!-- 아래코드는 숫자로 시작하는 id를 가지고 있어서 안됨 -->
+    <h1 id="3head">Lorem, ipsum dolor.</h1>
+
+    <!-- id속성에 빈칸 안됨 -->
+    <h1 id="my head">Lorem, ipsum dolor.</h1>
+
+    <!-- - 와 _ 사용가능 -->
+    <h1 id="my_head">Lorem, ipsum dolor.</h1>
+    <h1 id="my-head">Lorem, ipsum dolor.</h1>
+
+    <!-- 아래 두 요소는 다른 아이디를 가지고 있음 -->
+    <h1 id="yourhead">Lorem, ipsum dolor.</h1>
+    <h1 id="yourHead">Similique, blanditiis quisquam.</h1>
+
+    <!-- 중복 아이디 작성금지 -->
+    <h1 id="hisHead">Lorem, ipsum dolor.</h1>
+    <h1 id="hisHead">Sequi, rerum quae?</h1>
+
+</body>
+</html>
