@@ -35,6 +35,7 @@
         }
         a{
             color: white;
+            text-decoration: none;
         }
         #main{
             display: flex;
@@ -54,8 +55,30 @@
             width: 100px;
             background-color: brown;
         }
+        .table-header-row{
+            display: flex;
+            border-top : 3px solid black;
+            border-bottom: 3px solid gray;
+        }
+        .table-data-row{
+            display: flex;
+            border-bottom: 3px solid gray;
+        }
+        .table-header-cell{
+           
+            text-align: center;
+            font-weight: bold;
+        }
+        .table-header-cell, .table-data-cell{
+            border-right: 3px solid gray;
+            width: 100px;
+            padding: 7px 5px;
+        }
         
-
+        .table-header-cell:nth-child(2),
+        .table-data-cell:nth-child(2){
+            flex : 1;
+        }
     </style>
 </head>
 <body>
@@ -74,6 +97,15 @@
             Sign Up<i class="fa-solid fa-caret-down"></i>
         </div>
 
+        <div style="margin-right: 10px;">
+            <form>
+                <fieldset>
+                    <label>검색</label>
+                    <input type="text">
+                    <input type="submit" value="검색">
+                </fieldset>
+            </form>
+        </div>
         <div>
             Pro
         </div>
@@ -96,28 +128,28 @@
                 <a href="#"><i class="fa-solid fa-house"></i></a>
             </div>
             <div class="item">
-                HTML
+                <a href="../html/index2.html">HTML</a>
             </div>
             <div class="item">
-                CSS
+                <a href="53flex-ex05.html">CSS</a>
             </div>
             <div class="item">
-                JAVASCROPT
+                <a href="#">JAVASCROPT</a>
             </div>
             <div class="item">
-                SQL
+                <a href="#">SQL</a>
             </div>
             <div class="item">
-                PYTHON
+                <a href="#">PYTHON</a>
             </div>
             <div class="item">
-                JAVA
+                <a href="#">JAVA</a>
             </div>
             <div class="item">
-                PHP
+                <a href="#">PHP</a>
             </div>
             <div class="item mr-auto">
-                BOOTSTRAP
+                <a href="#">BOOTSTRAP</a>
             </div>
         <div class="item">
             <i class="fa-solid fa-circle-half-stroke"></i>
@@ -224,46 +256,191 @@
             </div>
         </div>
         <div class="content">
-            <div>
-                <h1>
+            <div class="table">
+                <div class="table-header-row">
+                    <div class="table-header-cell">
+                        Lorem.
+                    </div>
+                    <div class="table-header-cell">
+                        Soluta?
+                    </div>
+                    <div class="table-header-cell">
+                        Totam.
+                    </div>
+                    <div class="table-header-cell">
+                        Animi?
+                    </div>
+                </div>
+                <div class="table-data-row">
+                    <div class="table-data-cell">
+                        Lorem.
+                    </div>
+                    <div class="table-data-cell">
+                        Quibusdam!
+                    </div>
+                    <div class="table-data-cell">
+                        Sapiente.
+                    </div>
+                    <div class="table-data-cell">
+                        Repudiandae?
+                    </div>
+                </div>
+                <div class="table-data-row">
+                    <div class="table-data-cell">
+                        Lorem.
+                    </div>
+                    <div class="table-data-cell">
+                        Ex.
+                    </div>
+                    <div class="table-data-cell">
+                        Quidem.
+                    </div>
+                    <div class="table-data-cell">
+                        Laborum.
+                    </div>
+                </div>
+                <div class="table-data-row">
+                    <div class="table-data-cell">
+                        Lorem.
+                    </div>
+                    <div class="table-data-cell">
+                        Quam!
+                    </div>
+                    <div class="table-data-cell">
+                        Aperiam.
+                    </div>
+                    <div class="table-data-cell">
+                        Quia!
+                    </div>
+                </div>
+                <div class="table-data-row">
+                    <div class="table-data-cell">
+                        Lorem.
+                    </div>
+                    <div class="table-data-cell">
+                        Numquam!
+                    </div>
+                    <div class="table-data-cell">
+                        Dignissimos!
+                    </div>
+                    <div class="table-data-cell">
+                        Nostrum.
+                    </div>
+                </div>
+                <div class="table-data-row">
+                    <div class="table-data-cell">
+                        Lorem.
+                    </div>
+                    <div class="table-data-cell">
+                        Repudiandae.
+                    </div>
+                    <div class="table-data-cell">
+                        Pariatur!
+                    </div>
+                    <div class="table-data-cell">
+                        Corporis.
+                    </div>
+                </div>
+                <div class="table-data-row">
+                    <div class="table-data-cell">
+                        Lorem.
+                    </div>
+                    <div class="table-data-cell">
+                        Obcaecati!
+                    </div>
+                    <div class="table-data-cell">
+                        Esse!
+                    </div>
+                    <div class="table-data-cell">
+                        Esse?
+                    </div>
+                </div>
+                <div class="table-data-row">
+                    <div class="table-data-cell">
+                        Lorem.
+                    </div>
+                    <div class="table-data-cell">
+                        Nesciunt?
+                    </div>
+                    <div class="table-data-cell">
+                        Eligendi.
+                    </div>
+                    <div class="table-data-cell">
+                        Odit!
+                    </div>
+                </div>
+                <div class="table-data-row">
+                    <div class="table-data-cell">
+                        Lorem.
+                    </div>
+                    <div class="table-data-cell">
+                        Nihil.
+                    </div>
+                    <div class="table-data-cell">
+                        Laboriosam.
+                    </div>
+                    <div class="table-data-cell">
+                        Dolor!
+                    </div>
+                </div>
+                <div class="table-data-row">
+                    <div class="table-data-cell">
+                        Lorem.
+                    </div>
+                    <div class="table-data-cell">
+                        Id.
+                    </div>
+                    <div class="table-data-cell">
+                        Sapiente!
+                    </div>
+                    <div class="table-data-cell">
+                        Est!
+                    </div>
+                </div>
+                <div class="table-data-row">
+                    <div class="table-data-cell">
+                        Lorem.
+                    </div>
+                    <div class="table-data-cell">
+                        Id.
+                    </div>
+                    <div class="table-data-cell">
+                        Tenetur.
+                    </div>
+                    <div class="table-data-cell">
+                        Repellendus.
+                    </div>
+                </div>
+            </div>
+            <div class="table-data-row">
+                <div class="table-data-cell">
                     Lorem.
-                </h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis corrupti porro quis asperiores. Ipsam repudiandae debitis consectetur dolorem commodi dicta quidem sit, nulla cum qui! Tempore laboriosam illum in nisi?
-                </p>
+                </div>
+                <div class="table-data-cell">
+                    Quam!
+                </div>
+                <div class="table-data-cell">
+                    Aperiam.
+                </div>
+                <div class="table-data-cell">
+                    Quia!
+                </div>
             </div>
-            <div>
-                <h1>
-                    Odio!
-                </h1>
-                <p>
-                    Ipsam obcaecati tempore quos recusandae ducimus tempora consectetur aliquam quae reiciendis illum, maiores quia! Sapiente repellendus sed debitis repellat natus ipsum optio? Facere quibusdam aperiam fugiat ab iusto voluptatem explicabo!
-                </p>
+            <div class="table-data-row">
+                <div class="table-data-cell">
+                    Lorem.
+                </div>
+                <div class="table-data-cell">
+                    Quam!
+                </div>
+                <div class="table-data-cell">
+                    Aperiam.
+                </div>
+                <div class="table-data-cell">
+                    Quia!
+                </div>
             </div>
-            <div>
-                <h1>
-                    Consectetur?
-                </h1>
-                <p>
-                    Et, ducimus? Vel, quas aliquam molestias, minus tenetur laudantium eveniet dolorum ex aliquid a maiores. At, velit doloribus quod dignissimos ullam facere adipisci, in tenetur porro similique vel possimus maiores.
-                </p>
-            </div>
-            <div>
-                <h1>
-                    Optio!
-                </h1>
-                <p>
-                    Ipsam, quis temporibus, est nulla sint nisi illum animi doloribus incidunt dolorem mollitia dolores doloremque ad reiciendis neque qui ratione inventore unde quo alias distinctio! Dicta veniam pariatur ullam adipisci!
-                </p>
-            </div>
-            <div>
-                <h1>
-                    Non!
-                </h1>
-                <p>
-                    Accusamus ipsam molestias accusantium eius, labore animi saepe enim sint distinctio a sed reprehenderit nulla ullam eligendi quibusdam sit consectetur iusto? Accusantium fuga excepturi consectetur numquam tempore ad officia iste!
-                </p>
-            </div>
+            
         </div>
         <div class="ad">
             ad
@@ -273,3 +450,33 @@
 
 </body>
 </html>
+<!-- <h1>
+    Lorem.
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex laboriosam, inventore vero qui sit consectetur! Molestiae autem sequi ut tempore quae praesentium vitae fuga quas quis, assumenda velit deserunt et.
+    </p>
+</h1>
+<h1>
+    Vitae!
+    <p>
+        Necessitatibus perspiciatis distinctio hic sed, ipsam voluptatibus dicta eos quo nihil explicabo quae magnam vitae et. Cum obcaecati non eaque veritatis, quos nemo, rerum culpa modi iusto inventore eius laudantium.
+    </p>
+</h1>
+<h1>
+    Rerum.
+    <p>
+        Facilis dolorem non quidem consequatur error optio, natus, ullam et a quis veniam quo quia blanditiis adipisci ratione aliquam doloremque voluptatibus quae quam, odio eligendi quod repudiandae. Fuga, sunt rem!
+    </p>
+</h1>
+<h1>
+    Optio.
+    <p>
+        Accusantium voluptatibus dignissimos perferendis dolorum tenetur quae hic? Fugiat natus quo libero expedita in eius sit, sint earum consectetur fugit necessitatibus, vitae corrupti temporibus tempora vel obcaecati consequuntur maiores! Provident?
+    </p>
+</h1>
+<h1>
+    Earum?
+    <p>
+        Sapiente harum enim architecto in facere inventore, beatae cum odio ut exercitationem nobis eaque quo tenetur maiores delectus at itaque laborum nesciunt dolore nulla quidem, doloribus dolorum? Voluptas, voluptatibus doloremque?
+    </p>
+</h1> -->
