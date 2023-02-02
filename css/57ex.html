@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+       
         body{
             margin: 0px;
         }
@@ -19,6 +20,10 @@
             font-weight: bold;
             padding : 25px 12px;
         }
+        #header .form{
+            padding-top: 17px;
+            padding-bottom: 0px;
+        }
         .mr-auto{
             margin-right: auto;
         }
@@ -26,6 +31,9 @@
         #aside{
             display : flex;
             background-color: black;
+            position: sticky;
+            top: 0px;
+           
         }
 
         .item{
@@ -33,6 +41,10 @@
             color: white;
             padding:15px;
         }
+        .item:hover{
+            background-color: pink;
+        }
+       
         a{
             color: white;
             text-decoration: none;
@@ -79,6 +91,37 @@
         .table-data-cell:nth-child(2){
             flex : 1;
         }
+
+        #footer{
+            position: fixed;
+            bottom: 0px;
+            background-color: aqua;
+            width: 500px;
+        }
+        .toTop{
+        background-color: black;
+        color: white;
+        width: 70px;
+        height: 70px;
+        text-align: center;
+        line-height:  70px; 
+        border-radius: 50%;
+        font-size: 35px;
+        position: fixed;
+        right: 5px;
+        bottom: 5px;
+        }
+        
+        .innerform{
+            padding-left: 40px;
+            position: relative;
+        }
+        .icon{
+            position:absolute;
+            top:9px;
+            left:10px;
+        }
+
     </style>
 </head>
 <body>
@@ -97,10 +140,12 @@
             Sign Up<i class="fa-solid fa-caret-down"></i>
         </div>
 
-        <div style="margin-right: 10px;">
-            <form>
-                <fieldset>
-                    <label>검색</label>
+        <div class="form" style="margin-right: 10px;">
+            <form >
+                <fieldset class="innerform">
+                    <div class="icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
                     <input type="text">
                     <input type="submit" value="검색">
                 </fieldset>
@@ -121,36 +166,36 @@
 
     </header>
 
-    <aside>
-        <div id="aside">
-            <!-- .item*9 -->
-            <div class="item">
-                <a href="#"><i class="fa-solid fa-house"></i></a>
-            </div>
-            <div class="item">
-                <a href="../html/index2.html">HTML</a>
-            </div>
-            <div class="item">
-                <a href="53flex-ex05.html">CSS</a>
-            </div>
-            <div class="item">
-                <a href="#">JAVASCROPT</a>
-            </div>
-            <div class="item">
-                <a href="#">SQL</a>
-            </div>
-            <div class="item">
-                <a href="#">PYTHON</a>
-            </div>
-            <div class="item">
-                <a href="#">JAVA</a>
-            </div>
-            <div class="item">
-                <a href="#">PHP</a>
-            </div>
-            <div class="item mr-auto">
-                <a href="#">BOOTSTRAP</a>
-            </div>
+
+    <aside  id="aside">
+        <!-- .item*9 -->
+        <div class="item">
+            <a href="#"><i class="fa-solid fa-house"></i></a>
+        </div>
+        <div class="item">
+            <a href="../html/index2.html">HTML</a>
+        </div>
+        <div class="item">
+            <a href="53flex-ex05.html">CSS</a>
+        </div>
+        <div class="item">
+            <a href="#">JAVASCROPT</a>
+        </div>
+        <div class="item">
+            <a href="#">SQL</a>
+        </div>
+        <div class="item">
+            <a href="#">PYTHON</a>
+        </div>
+        <div class="item">
+            <a href="#">JAVA</a>
+        </div>
+        <div class="item">
+            <a href="#">PHP</a>
+        </div>
+        <div class="item mr-auto">
+            <a href="#">BOOTSTRAP</a>
+        </div>
         <div class="item">
             <i class="fa-solid fa-circle-half-stroke"></i>
         </div>
@@ -447,6 +492,10 @@
         </div>
 
     </main>
+
+    <div class="toTop">
+        <a href="#"><i class="fa-solid fa-up-long"></i></a>
+    </div>
 
 </body>
 </html>
