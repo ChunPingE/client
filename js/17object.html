@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    </style>
+</head>
+<body>
+    <div style="border:1px soild red">dd</div>
+     
+    <script>
+        //object : 여러 값(속성 property)를 갖는 data type
+        //변수 각각 하나의 값만 가짐.
+        let name = "john"; 
+        let age = 30;
+        
+        //a객체는 name 속성과 age속성을 갖는다.
+        let a = {name:"jane", age:40};
+
+        console.log(name);
+        console.log(age);
+        console.log(a.name);
+        console.log(a.age);
+
+        name = "donald";
+        console.log(name); //donald
+
+        a.name = "trump";
+        console.log(a.name);  //trump
+
+        a.age = 50;
+        console.log(a.age); //50
+
+        //새로운 property를 추가하고 싶다.
+        a.address = "seoul";
+        console.log(a.address); //seoul
+
+        console.log(a.birth); //undefinded 
+
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
