@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .col:nth-child(odd) {
+            background-color: skyblue;
+        }
+
+        .col:nth-child(even) {
+            background-color: yellow;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- .container>.row>.col*2{$} -->
+    <div class="container">
+        <div class="row">
+            <div class="col aside">1</div>
+            <div class="col"><table class="table table-striped table-bordered">
+                <!-- 제목 행이 있는 요소 -->
+                <thead>
+                    <!-- 한행(table row) -->
+                    <tr>
+                        <!-- 제목셀(cell) -->
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>작성일</th>
+                    </tr>
+                </thead>
+        
+                <!-- 본문행들이 있는 요소 -->
+                <tbody>
+                    <!-- 행(table row) -->
+                    <tr>
+                        <!-- 본문셀(cell) -->
+                        <td>1</td>
+                        <td>Lorem ipsum dolor sit.</td>
+                        <td>2023.02.02</td>
+                    </tr>
+                    <!-- tr*10>td{$@2}+td>lorem4^td{오늘} -->
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            Lorem ipsum dolor sit.
+                        </td>
+                        <td>오늘</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            Ullam assumenda ipsum tenetur.
+                        </td>
+                        <td>오늘</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>
+                            Autem consequatur aperiam adipisci.
+                        </td>
+                        <td>오늘</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>
+                            Aspernatur quod fugiat consectetur.
+                        </td>
+                        <td>오늘</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>
+                            Quae eum omnis tenetur!
+                        </td>
+                        <td>오늘</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>
+                            Iusto nesciunt exercitationem quaerat?
+                        </td>
+                        <td>오늘</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>
+                            Soluta assumenda vitae iusto!
+                        </td>
+                        <td>오늘</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>
+                            Reprehenderit aut corporis tempora?
+                        </td>
+                        <td>오늘</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>
+                            Error optio libero repudiandae?
+                        </td>
+                        <td>오늘</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>
+                            Quasi quos a nemo!
+                        </td>
+                        <td>오늘</td>
+                    </tr>
+                </tbody>
+            </table></div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- .container>.row>.col*3{$}^.row>.col*2{$}^.row*3>.col*4{$} -->
+    <div class="container">
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+        </div>
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">2</div>
+        </div>
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+        </div>
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+        </div>
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
