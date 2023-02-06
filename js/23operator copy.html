@@ -10,20 +10,83 @@
 </head>
 <body>
     <!-- input#input$*2+button{X}+p#result -->
-    <input type="text" id="input1">
-    <input type="text" id="input2">
-    <button class="op" onclick="multiply()">X</button>
+    <section id="section">   
+        <div id="result">
+            <input type="text" value="0" disabled>
+        </div>
+        <div class="btns">
+            <div>
+                <button type="button" >7</button>
+                <button type="button" >8</button>
+                <button type="button" >9</button>
+                <input type = "submit" class="op" value="*"/>
+            </div>
+            <div>
+                <button type="button" >4</button>
+                <button type="button" >5</button>
+                <button type="button" >6</button>
+                <input type = "submit" class="op" value="-"/>
+            </div>
+            <div>
+                <button type="button" >1</button>
+                <button type="button" >2</button>
+                <button type="button" >3</button>
+                <input type = "submit" class="op" value="/"/>
+            </div>
+            <div>
+                <button type="button" >0</button>
+                <input type = "submit" class="op" value="+"/>
+                <input type = "submit" class="op" value="="/>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- <button class="op" onclick="multiply()">X</button>
     <button class="op" onclick="substract()">-</button>
     <button class="op" onclick="divide()">/</button>
-    <button class="op" onclick="sum()">+</button>
- 
-    <p id="result"></p>
-    <script>
-        // function dd(e){
-        //     let op= document.querySelector(".op");
-        //     e.target
+    <button class="op" onclick="sum()">+</button> -->
 
-        // }
+    
+    <script>
+        window.addEventListener("load", function () {
+        var section = document.querySelector("#section");
+        var result = document.querySelector("#result input");
+        var btns = section.querySelector(".btns");
+        var ops = section.querySelectorAll(".op");
+
+        btns.onclick = function (e){
+            console.log(btns.onclick);
+            if(e.target.nodeName != "BUTTON") {
+            return;
+            }
+            result.value = "5";
+            
+           
+        };
+
+        ops[0].onclick = function (e){
+            e.stopPropagation();
+            alert("op")
+        }
+        ops[1].onclick = function (e){
+            e.stopPropagation();
+            alert("op")
+        }
+        ops[2].onclick = function (e){
+            e.stopPropagation();
+            alert("op")
+        }
+        ops[3].onclick = function (e){
+            e.stopPropagation();
+            alert("op")
+        }
+        ops[4].onclick = function (e){
+            e.stopPropagation();
+            alert("op")
+        }
+   
+    });
 
         function sum(){
             let input1 = document.querySelector("#input1");
