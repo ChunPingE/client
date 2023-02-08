@@ -7,4 +7,6 @@
 2023.02.01 5일차 flex박스<br>
 2023.02.02 6일차 신세계 부트스트랩<br>
 2023.02.03 7일차 JavaScript 시작<br>
-2023.02.03 8일차 JavaScript 기본<br>
+2023.02.06 8일차 JavaScript 기본<br>
+2023.02.07 9일차 JavaScript 변수들<br>
+2023.02.08 10일차 JavaScript 배열 객체 함수<br>
