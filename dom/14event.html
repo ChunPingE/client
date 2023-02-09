@@ -6,50 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <style>
     </style>
 </head>
 
 <body>
-    <h1 id="head1" class="note" onclick="console.log(999);">
-        Lorem.
-    </h1>
-
-    <h1 onclick="console.log('hello event');">Lorem.</h1>
-
-    <h1 onclick="console.log('점심시간'); console.log('밥먹자');">
-        Lorem.
-    </h1>
-
-    <h1 onclick="myfunc();">
-        Lorem.
-    </h1>
-
-    <h1 ondblclick="myfunc();">
-        Lorem.
-    </h1>
-
-    <h1 id="head2">
-        Lorem.
-    </h1>
+    <!-- input#input1+button[onclick]{추가}+ul#list1>li*2>lorem1 -->
+    <input type="text" id="input1" style="text-align:right">
+    <button onclick="add();">추가</button>
+    <ul id="list1">
+        <li>Lorem.</li>
+        <li>Et.</li>
+    </ul>
     <script>
-        function myfunc() {
-            console.log("함수 실행됨!!");
-            console.log("여러 명령문을 작성해도 되겟다.");
-        }
+        //input에 값을 넣으면 list로 만들어서 추가하기
+        let input1 = document.querySelector("#input1");
+        let ul = document.querySelector("#list1");
 
-        /*
-        let head = document.querySelector("#head2");
-        head.onclick = function () {
-            myfunc();
+        function add() {
+            //1.#input1의 value얻기
+            //2.새 li요소만들고
+            //3.새요소의 textContent를 1에서 얻은 값으로 할당
+            //4.#list1 요소얻기
+            //5.4에서 얻은 요소에 2에서 만든 요소 append하기
+            let text = input1.value;
+            let li = document.createElement("li");
+            li.textContent = text;
+            ul.append(li);
+            input1.value = "";
         }
-      
-        $("#head2").click(function(){
-            $("#head2").text("hi");
-        });
-        */
-
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
