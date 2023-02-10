@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    </style>
+</head>
+<body>
+    <h1 id="head1">
+        Lorem.
+    </h1>
+    <h1 id="head2" class="note error">
+        Quidem!
+    </h1>
+    <h1 id="head3" class="error">
+        Dolorem.
+    </h1>
+    <p id="para1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt corrupti illo repellendus cupiditate officiis nostrum ut distinctio quam alias quaerat nemo mollitia illum, molestias est. Cupiditate doloremque necessitatibus dolor sapiente.
+    </p>
+    <p id="para2">
+        Eaque, sed! Fugit possimus id aut veniam repellat ducimus animi ipsam est odit! Odit tenetur consequuntur eos tempore maiores facere perferendis, incidunt alias sint asperiores earum non ea, suscipit optio!
+    </p>
+    <p id="para3">
+        Illum dicta ullam perferendis ducimus facilis cumque repellat eligendi, magnam eius officia porro provident laudantium blanditiis modi. Magnam eligendi repudiandae iste vero praesentium sapiente laborum quis molestiae, necessitatibus sed rerum!
+    </p>
+    <!-- button[onclik]*4{click$} -->
+    <button onclik="effect1()">click1</button>
+    <button onclik="effect2()">click2</button>
+    <button onclik="effect3()">click3</button>
+    <button onclik="effect4()">click4</button>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        function effect1() {
+            $("head1").hide(3000);
+        }
+
+        function effect2(){
+            $(".note").hide(3000);
+        }
+
+        //error클래스 요소 숨기기
+        function effect3(){
+            $(".error").hide(3000);
+        }
+
+        //p요소 숨기기
+        function effect3(){
+            $("p").hide(3000);
+        }
+
+        
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

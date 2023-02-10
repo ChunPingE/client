@@ -10,47 +10,19 @@
 </head>
 <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <input type="text" id="input1">
-    <ul id="list1"></ul>
-
-    <hr/>
-
-    <input type="text" id="input2">
-    <ul id="list2"></ul>
     <script>
-        //Jquery
-        $("#input2").keyup(function(e){
-            if (e.key === "Enter"){
-                $("#list2").append(`<li>${$(this).val()}</li>`);
-                $(this).val("");
+        function a(){
+            return{
+                name:"son",
+                val:function(){
+                    return soccer;
+                }
             }
-        });
-  
-        let ul = document.querySelector("#list1");
-        let input1 = document.querySelector("#input1");
+        }
+
+        console.log($().name);
+        console.log($().val());
         
-        //보통의 자바 스크립트 코드(vanilla javascript)
-        input1.addEventListener("keypress", function(e){
-            if (e.key === "Enter") {
-                let text = this.value;
-                let li = document.createElement("li");
-                li.textContent = text;
-                ul.append(li);
-                this.value= "";
-            }
-        });
-
-
-
-
-
-
-
-
-
-
-
-
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>

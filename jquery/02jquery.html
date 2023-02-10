@@ -5,53 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
     <style>
     </style>
 </head>
 <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <input type="text" id="input1">
-    <ul id="list1"></ul>
-
-    <hr/>
-
-    <input type="text" id="input2">
-    <ul id="list2"></ul>
+    
     <script>
-        //Jquery
-        $("#input2").keyup(function(e){
-            if (e.key === "Enter"){
-                $("#list2").append(`<li>${$(this).val()}</li>`);
-                $(this).val("");
-            }
-        });
-  
-        let ul = document.querySelector("#list1");
-        let input1 = document.querySelector("#input1");
+        let a = $();
+        console.log(a);
         
-        //보통의 자바 스크립트 코드(vanilla javascript)
-        input1.addEventListener("keypress", function(e){
-            if (e.key === "Enter") {
-                let text = this.value;
-                let li = document.createElement("li");
-                li.textContent = text;
-                ul.append(li);
-                this.value= "";
-            }
-        });
+        let b = $("#head1");
+        console.log(b);
 
-
-
-
-
-
-
-
-
-
-
+        b.remove();
 
     </script>
+
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
