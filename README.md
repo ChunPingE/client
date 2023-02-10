@@ -11,3 +11,5 @@
 2023.02.07 9일차 JavaScript 변수들<br>
 2023.02.08 10일차 JavaScript 배열 객체 함수<br>
 2023.02.09 11일차 JavaScrpit DOM<br>
+2023.02.10 12일차 JavaScrpit Jquery<br>
+
