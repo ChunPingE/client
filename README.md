@@ -15,5 +15,5 @@
 2023.02.13 13일차 JavaScrpit Jquery<br>
 2023.02.14 14일차 Java시작<br>
 Java시작에 따라 리포지터리 변경됨<br>
-https://github.com/ChunPingE/Java2023<br>
+https://github.com/ChunPingE/JavaStudy<br>
 이어서...
